@@ -6,6 +6,11 @@ Scenario: Output naming convention
     When I pass "xyz" as an argument to the app
     Then the file "xyz_out" should exist
 
+Scenario: Naming convention with multiple suffixes
+    Given the file "xyz.tar.gz" with content "FooBar" exists
+    When I pass "xyz.tar.gz" as an argument to the app
+    Then the file "xyz_out.tar.gz" should exist
+
 Scenario: Naming convention with suffix
     Given the file "xyz.txt" with content "FooBar" exists
     When I pass "xyz.txt" as an argument to the app
