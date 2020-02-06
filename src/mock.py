@@ -39,3 +39,5 @@ if __name__ == "__main__":
         path = "/resources/text.txt"
     mock = MockApp(path)
     mock.process()
+
+# foobar
