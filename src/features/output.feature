@@ -11,11 +11,6 @@ Scenario: Naming convention with suffix
     When I pass "xyz.txt" as an argument to the app
     Then the file "xyz_out.txt" should exist
 
-Scenario: Naming convention with multiple suffixes
-    Given the file "xyz.tar.gz" with content "FooBar" exists
-    When I pass "xyz.tar.gz" as an argument to the app
-    Then the file "xyz_out.tar.gz" should exist
-
 Scenario: Uppercase output
     Given the file "xyz" with content "FooBar" exists
     When I pass "xyz" as an argument to the app
